@@ -295,6 +295,13 @@ private class LabelSwitchPart {
         }
     }
     
+    @IBInspectable var font: UIFont = .systemFont(ofSize: 10) {
+        didSet{
+            switchConfigL.font = font
+            switchConfigR.font = font
+        }
+    }
+    
     private var widthLayout: NSLayoutConstraint?
     private var heightLayout: NSLayoutConstraint?
     
